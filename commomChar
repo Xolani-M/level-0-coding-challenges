@@ -1,4 +1,4 @@
-function commonChar(str1, str2) {
+function outputCommonChar(str1, str2) {
  var str = "";
  var i = 0;
  var j = 0;
@@ -12,4 +12,4 @@ for (j=0; j<len; j++) {
       }
    return str;
 }
-console.log(commonChar("drum","dumb"));
+console.log(outputCommonChar("drum","dumb"));
