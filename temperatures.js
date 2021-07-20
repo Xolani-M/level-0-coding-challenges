@@ -1,11 +1,17 @@
-function celsiusToFah(celsius) {
-var fahrenheit = celsius * (9/5) + 32;
-return fahrenheit;
+function celToFah(celsius) 
+{
+  var c = celsius;
+  var celToFah = c * 9 / 5 + 32;
+  var temp = c + "\xB0C is " + celToFah + " \xB0F.";
+    console.log(temp);
 }
-console.log(celsiusToFah(30));
 
-function fahToCelsius(fahrenheit){
-  var celsius = fahrenheit -32 / (9/5);
-  return celsius;
-}
-console.log(fahToCelsius(50));
+function fahToCel(fahrenheit) 
+{
+  var f = fahrenheit;
+  var fahToCel = (f - 32) * 5 / 9;
+  var temp = f + "\xB0F is " + fahToCel + "\xB0C.";
+    console.log(temp);
+} 
+celToFah(30);
+fahToCel(86);
