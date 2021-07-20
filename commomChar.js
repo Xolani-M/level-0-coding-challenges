@@ -10,6 +10,6 @@ for (j=0; j<len; j++) {
     }
 }
       }
-   return str;
+   print(str);
 }
 console.log(outputCommonChar("drum","dumb"));
