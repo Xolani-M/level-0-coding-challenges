@@ -1,6 +1,12 @@
-function timeConverter (num){ 
-  var hours = Math.floor(num / 60);  
-  var minutes = num % 60;
-  return hours + ":" + minutes;         
+function timeConvert(number) {
+var num = number;
+var hours = (num / 60);
+var hrs = Math.floor(hours);
+var minutes = (hours - hrs) * 60;
+var min = Math.round(minutes);
+return num + " = " + hrs + " hours, " + min + " minutes.";
 }
-console.log(timeConverter(133));
+
+console.log(timeConvert(133));
+
+
