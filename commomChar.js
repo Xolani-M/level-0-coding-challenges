@@ -1,15 +1,17 @@
-function outputCommonChar(str1, str2) {
- var str = "";
- var i = 0;
- var j = 0;
- const len = str1.length >= str2.length ? str1.length:str2.length;  
-      for (i=0; i<len; i++) {
-for (j=0; j<len; j++) {
-    if (str1.charAt(i) === str2.charAt(j)) {
-     str = str + str1.charAt(i);
-    }
+function commonChar(){
+  var dict ={};
+  var s1 = "house";
+var s2 ="computers";
+  for(var i=0; i < s1.length; i++) {
+   dict[s1.charAt(i)] = 1;
+} var commonChars =[];
+  for(var i=0; i < s2.length; i++) {
+   if( dict[s2.charAt(i)] === 1) {
+   commonChars.push(s2.charAt(i));
 }
-      }
-   print(str);
 }
-console.log(outputCommonChar("drum","dumb"));
+  dict = "Common letters: " + commonChars.join(",");
+console.log(dict);
+}
+
+commonChar();
