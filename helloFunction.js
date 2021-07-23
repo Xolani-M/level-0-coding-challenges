@@ -1,4 +1,4 @@
-function hello (name){
-console.log("Hello Xolani!");
+function hello ( name ){
+console.log("Hello " + name + "!" );
 }
-hello("");
+hello ("Xolani");
