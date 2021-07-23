@@ -1,4 +1,4 @@
-function celToFah(celsius) 
+function celToFah(celsius)
 {
   var c = celsius;
   var celToFah = c * 9 / 5 + 32;
@@ -6,12 +6,12 @@ function celToFah(celsius)
     console.log(temp);
 }
 
-function fahToCel(fahrenheit) 
+function fahToCel(fahrenheit)
 {
   var f = fahrenheit;
   var fahToCel = (f - 32) * 5 / 9;
   var temp = f + "\xB0F is " + fahToCel + "\xB0C.";
     console.log(temp);
-} 
-celToFah(30);
-fahToCel(86);
+}
+celToFah(10);
+fahToCel(50);
