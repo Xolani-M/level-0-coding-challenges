@@ -1,11 +1,13 @@
-function ptintOutVowels(v){
-    let str="";
-    for(var i=0; i<v.length ; i++)
-    {
-if((v[i]==="a")||(v[i]==="e")||(v[i]==="i")||(v[i]==="o")||(v[i]==="u")){
-            console.log(v[i]);
+function printOutVowels (str){
+var vowels = ["a", "e", "i", "o", "u"]
+var letters = str.split("");
+var vowelsFound = [];
+   for (var i in letters) {
+        if (vowels.includes(letters[i])) {
+            vowelsFound.push(letters[i]);
         }
     }
-    console.log(str)
+    console.log("Vowels:", vowelsFound.join(", "));    
 }
-ptintOutVowels("Umuzi")
+
+printOutVowels(("Umuzi"));
