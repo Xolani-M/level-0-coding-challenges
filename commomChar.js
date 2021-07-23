@@ -5,7 +5,7 @@ var s2 ="computers";
   for(var i=0; i < s1.length; i++) {
    dict[s1.charAt(i)] = 1;
 } var commonChars =[];
-  for(var i=0; i < s2.length; i++) {
+  for(i = 0; i < s2.length; i++) {
    if( dict[s2.charAt(i)] === 1) {
    commonChars.push(s2.charAt(i));
 }
@@ -15,3 +15,4 @@ console.log(dict);
 }
 
 commonChar();
+
