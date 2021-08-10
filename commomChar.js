@@ -1,7 +1,5 @@
-function commonChar(){
+function commonChar(s1,s2){
   var dict ={};
-  var s1 = "house";
-var s2 ="computers";
   for(var i=0; i < s1.length; i++) {
    dict[s1.charAt(i)] = 1;
 } var commonChars =[];
@@ -14,5 +12,4 @@ var s2 ="computers";
 console.log(dict);
 }
 
-commonChar();
-
+commonChar("house", "computers");
