@@ -1,17 +1,14 @@
-function celToFah(celsius)
-{
-  var c = celsius;
-  var celToFah = c * 9 / 5 + 32;
-  var temp = c + "\xB0C is " + celToFah + " \xB0F.";
+function celToFah(celsius){
+  let celToFah = celsius * 9 / 5 + 32;
+  let temp = celsius + "\xB0C is " + celToFah + " \xB0F.";
     console.log(temp);
 }
+fahToCel(50);
 
-function fahToCel(fahrenheit)
-{
-  var f = fahrenheit;
-  var fahToCel = (f - 32) * 5 / 9;
-  var temp = f + "\xB0F is " + fahToCel + "\xB0C.";
+function fahToCel(fahrenheit){
+  let fahToCel = (fahrenheit - 32) * 5 / 9;
+  let temp = fahrenheit + "\xB0F is " + fahToCel + "\xB0C.";
     console.log(temp);
 }
 celToFah(10);
-fahToCel(50);
+ 
