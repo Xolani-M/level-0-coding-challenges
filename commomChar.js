@@ -1,15 +1,12 @@
-function commonChar(s1,s2){
-  var dict ={};
-  for(var i=0; i < s1.length; i++) {
-   dict[s1.charAt(i)] = 1;
-} var commonChars =[];
-  for(i = 0; i < s2.length; i++) {
-   if( dict[s2.charAt(i)] === 1) {
-   commonChars.push(s2.charAt(i));
+let commoncharacters = (a,b) =>{
+    let characters = [];
+    for(let i = 0; i < a.length; i++)
+    if(characters.indexOf(a[i]) === - 1){
+        if(b.indexOf(a[i]) !== - 1){
+            characters += a[i];
+        }
+    }
+    console.log("Common letters: " + Array.prototype.join.call(characters));
 }
-}
-  dict = "Common letters: " + commonChars.join(",");
-console.log(dict);
-}
+commoncharacters("house","computers");
 
-commonChar("house", "computers");
