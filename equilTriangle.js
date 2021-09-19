@@ -1,6 +1,5 @@
-function equilateral (a,b,c){
-var s = (a + b + c)/2;
-return  Math.sqrt(s * (s - a) * (s - b ) * (s - c))
+let equilateralTriangle = (x,y,z) =>{
+    let area = (x + y + z) / 2; 
+    console.log(Math.sqrt(area * (area - x) * (area - y) * (area - z)));
 }
-
-console.log(equilateral(6,6,6));
+equilateralTriangle(6,6,6);
