@@ -1,4 +1,10 @@
-let evenOrOdd = (int) => int % 2 === 0 ? "even" : "odd"; 
-console.log(evenOrOdd(7));
+let evenOrOdd = (int) => {
+  if(int % 2 === 0){
+    console.log("even");
+  }else{
+    console.log("odd");
+  }
+}
+(evenOrOdd(7));
 
 
